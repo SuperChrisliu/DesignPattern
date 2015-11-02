@@ -4,19 +4,9 @@
 #
 #-------------------------------------------------
 
-QT       += core
+TEMPLATE = subdirs
 
-QT       -= gui
-
-TARGET = DesignPatterns
-CONFIG   += console
-CONFIG   -= app_bundle
-
-TEMPLATE = app
-
-
-SOURCES += main.cpp \
-    singleton.cpp
-
-HEADERS += \
-    singleton.h
+SUBDIRS += \
+    Singleton/SingletonTemplate \
+    Singleton/SingletonMacro \
+    Singleton/SingletonGlobalStatic
