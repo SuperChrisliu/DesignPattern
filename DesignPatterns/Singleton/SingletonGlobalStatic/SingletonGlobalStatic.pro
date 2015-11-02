@@ -14,7 +14,9 @@ TEMPLATE = app
 include(../../env.pri)
 
 SOURCES += main.cpp \
+    singleton.cpp
 
 
 HEADERS  += \
+    singleton.h
 
