@@ -30,10 +30,10 @@ template<typename T> QScopedPointer<T> Singleton<T>::_instance;
 template<typename T>
 T &Singleton<T>::getInstance()
 {
-    if(_instance == NULL)
+    if(_instance.isNull())
     {
         _mutex.lock();
-        if(_instance == NULL)
+        if(_instance.isNull())
         {
             _instance.reset(new T());
         }

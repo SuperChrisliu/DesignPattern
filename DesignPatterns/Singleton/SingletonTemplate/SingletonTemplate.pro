@@ -13,7 +13,8 @@ TEMPLATE = app
 
 include(../../env.pri)
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    singletontest.cpp
 
 
 HEADERS  += \

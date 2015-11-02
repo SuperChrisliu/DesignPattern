@@ -3,12 +3,14 @@
 
 #include "singleton.h"
 
+
 class SingletonTest
 {
+    SINGLETON(SingletonTest) \
+
 public:
     void test();
 
-    SINGLETON(SingletonTest) \
 };
 
 #endif // SINGLETONTEST_H
